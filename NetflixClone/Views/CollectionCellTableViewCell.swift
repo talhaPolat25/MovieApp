@@ -83,7 +83,7 @@ extension CollectionCellTableViewCell:UICollectionViewDataSource,UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         let movie = mediaS[indexPath.row]
-        ApiManager.shared.getYoutubeTrailer(with: "\( movie.name ?? movie.original_title) original trailer") { result in
+        ApiManager.shared.getYoutubeTrailer(with: "\( movie.name ?? movie.original_title) originall trailer") { result in
             switch result{
             case .success(let videoElement):
                 let view = MovieDetailViewModel(titleOfMovie: movie.name ?? movie.original_title ?? "" , overviewOfMovie: movie.overview, webViewLink: videoElement.id )
