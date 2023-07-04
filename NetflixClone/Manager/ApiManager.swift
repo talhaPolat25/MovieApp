@@ -10,7 +10,7 @@ import Alamofire
 struct Constants{
     
     //static let baseUrl:String = "https://api.themoviedb.org"
-    static let apiKey:String = "4f2ca9826ec85189db31539ace5eb27d"
+   // static let apiKey:String = "4f2ca9826ec85189db31539ace5eb27d"
     static let trendingMoviesUrl = "https://api.themoviedb.org/3/trending/all/day?api_key=4f2ca9826ec85189db31539ace5eb27d"
     static let popularMoviesUrl = "https://api.themoviedb.org/3/movie/popular?api_key=4f2ca9826ec85189db31539ace5eb27d&language=en-US&page=1"
     static let upComingMovieUrl = "https://api.themoviedb.org/3/movie/upcoming?api_key=4f2ca9826ec85189db31539ace5eb27d&language=en-US&page=1"
